@@ -1,0 +1,115 @@
+
+:root
+{
+    --payne: #495867;
+    --glaucus: #577399;
+    --columbiaOscuro: #ADC6DC;
+    --columbia: #BDD5EA;
+    --ghost: #F7F7FF;
+    --ghostOscuro:#DBDBE4;
+    --bitter: #FE5F55;
+    --bitterOscuro: #983831;
+}
+
+body
+{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    background-color: var(--payne);
+}
+.caja
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 235px;
+    height: 400px;
+    border-style: outset;
+    border-color: var(--glaucus);
+    border-width: 10px;
+    background-color: var(--glaucus);
+}
+.resultado
+{
+    text-align: right;
+    top: 2px;
+    min-width: 205px;
+    max-width: 205px;
+    height: 50px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botonera
+{
+    align-items: center;
+    padding: 0%;
+    margin: 2px;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    background-color: var(--glaucus);
+    bottom: 50px;
+    min-width: 210px;
+    max-width: 210px;
+    min-height: 300px;
+    
+}
+button
+{
+    padding: 2px;
+    border-color: #C8DDF0;
+    border-style:outset;
+    border-width: 2px;
+    color: black;
+    background-color: var(--columbia);
+    min-width:50px;
+    max-width: 50px;
+    height: 50px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+}
+button:hover
+{
+    background-color: var(--columbiaOscuro);
+    border-color: var(--columbiaOscuro);
+}
+.numerico
+{
+    background-color: var(--ghost);
+}
+.numerico:hover
+{
+    background-color: var(--ghostOscuro);
+    border-color: var(--ghostOscuro);
+}
+.igual
+{
+    background-color: var(--bitter);
+    border-color: #FE5F55;
+}
+.igual:hover
+{
+    background-color: var(--bitterOscuro);
+    border-color: var(--bitterOscuro);
+}
+.borrar
+{
+   background-image: url(borrar.png);
+    object-fit:cover;
+    
+}
+.coma{
+    background-color: var(--columbia);
+}
+.coma:hover
+{
+    background-color: var(--columbiaOscuro);
+    border-color: var(--columbiaOscuro);
+}
+.invi
+{
+    visibility: hidden;
+}
